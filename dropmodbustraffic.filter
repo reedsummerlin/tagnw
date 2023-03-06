@@ -1,0 +1,5 @@
+if (ip.proto == TCP && tcp.dst == 502)
+{
+	drop();
+	msg("MODBUS TRAFFIC FOUND--->DROPPED MODBUS TRAFFIC");
+}
